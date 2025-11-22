@@ -1,0 +1,14 @@
+{
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "files.associations": {
+            "bluetooth.h": "c",
+            "string.h": "c"
+        }
+    },
+    "extensions": {}
+}
