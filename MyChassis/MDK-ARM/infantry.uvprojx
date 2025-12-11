@@ -660,6 +660,11 @@
               <FileType>8</FileType>
               <FilePath>..\User\Middleware\Algorithm\alg_slope.cpp</FilePath>
             </File>
+            <File>
+              <FileName>alg_fsm.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\User\Middleware\Algorithm\alg_fsm.cpp</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

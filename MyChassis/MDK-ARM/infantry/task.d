@@ -64,4 +64,4 @@ infantry/task.o: ../User/Task/task.cpp ../User/Task/task.h \
   ../User/Middleware/Algorithm\alg_slope.h ../User/Device\dvc_sampler.h \
   ../User/Middleware/Algorithm\alg_filter.h \
   ../User/Middleware/Driver\drv_adc.h ../User/Device\dvc_referee.h \
-  ../User/Device\dvc_supercap.h
+  ../User/Device\dvc_supercap.h ../User/Middleware/Algorithm\alg_fsm.h

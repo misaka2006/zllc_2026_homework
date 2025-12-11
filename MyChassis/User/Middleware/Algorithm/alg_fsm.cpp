@@ -29,22 +29,23 @@
  * @param __Status_Number 状态数量
  * @param __Now_Status_Serial 当前指定状态机初始编号
  */
+
 void Class_FSM::Init(uint8_t __Status_Number, uint8_t __Now_Status_Serial)
-{
-    Status_Number = __Status_Number;
-
-    Now_Status_Serial = __Now_Status_Serial;
-
-    //所有状态全刷0
-    for (int i = 0; i < Status_Number; i++)
     {
-        Status[i].Status_Stage = Status_Stage_DISABLE;
-        Status[i].Time = 0;
-    }
+        Status_Number = __Status_Number;
 
-    //使能初始状态
-    Status[__Now_Status_Serial].Status_Stage = Status_Stage_ENABLE;
-}
+        Now_Status_Serial = __Now_Status_Serial;
+
+        // 所有状态全刷0
+        for (int i = 0; i < Status_Number; i++)
+        {
+            Status[i].Status_Stage = Status_Stage_DISABLE;
+            Status[i].Time = 0;
+        }
+
+        // 使能初始状态
+        Status[__Now_Status_Serial].Status_Stage = Status_Stage_ENABLE;
+    }
 
 /**
  * @brief 定时器处理函数
@@ -55,7 +56,7 @@ void Class_FSM::Reload_TIM_Status_PeriodElapsedCallback()
 {
     Status[Now_Status_Serial].Time++;
 
-    //自己接着编写状态转移函数
+    // 自己接着编写状态转移函数
 }
 
 /************************ COPYRIGHT(C) USTC-ROBOWALKER **************************/

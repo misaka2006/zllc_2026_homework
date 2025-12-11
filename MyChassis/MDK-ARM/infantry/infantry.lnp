@@ -47,6 +47,7 @@
 "infantry\alg_pid.o"
 "infantry\alg_power_limit.o"
 "infantry\alg_slope.o"
+"infantry\alg_fsm.o"
 "infantry\drv_can.o"
 "infantry\drv_dwt.o"
 "infantry\drv_math.o"
